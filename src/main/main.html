@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<script src="../jquery.js"></script>
+<script src="./send_data.js"></script>
+<script src="./main.js"></script>
+
+<body>
+   <header>
+      <div class="name">Регистрация</div>
+      <div class="logo"></div>
+      <div class="auth"></div>
+   </header>
+   <main>
+
+      <form id="form" class="check" name="form1" action="">
+         <div>
+            <button type="button" name="button1" id="employer" OnClick="fff(this)">Работодатель</button>
+            <button type="button" name="button1" id="specialist" OnClick="fff(this)">Специалист</button>
+            <button type="button" name="button1" id="team_member" OnClick="fff(this)">Команда(член команды)</button>
+         </div>
+      </form>
+
+      <form id="form" class="employer" action="">
+         <div>
+
+         </div>
+      </form>
+      <form id="form" class="specialist" action="">
+         <div>
+            <input type="text" name="name_sname" id="" placeholder="ФИО"></input>
+            <input type="text" name="duration" id="" placeholder="Специализация (направления программирования)"></input>
+            <input type="date" name="date" id="" placeholder="Календарь"></input>
+            <input type="text" name="level_develop" id="" placeholder="Уровень опыта разработки"></input>
+            <input type="gmail" name="mail" id="" placeholder="Адрес электронной почты"></input>
+            <button type="button" id="specialist" value="send" OnClick="click_send(this)">Отправить</button>
+         </div>
+      </form>
+      <form id="form" class="team_member" action="">
+         <div>
+            <input type="text" name="team_name" id="" placeholder="Название команды"></input>
+            <input type="checkbox" name="cheak_teamlider" id="">Тимлидер команды?</input>
+            <input type="text" name="name_sname" id="" placeholder="ФИО"></input>
+            <input type="text" name="level_develop" id="" placeholder="Уровень опыта разработки"></input>
+            <input type="text" name="duration" id="" placeholder="Cпециализация (направление программирования)"></input>
+            <button type="button" id="team_member" value="send" OnClick="click_send(this)" >Отправить</button>
+         </div>
+      </form>
+   </main>
+</body>
+
+</html>
